@@ -46,7 +46,7 @@ function showCloneImg (cloneImg){
 
     document.body.appendChild(backgroundEffect);
 
-    backgroundEffect.style.animation = "opacity 0.5s forwards"
+    backgroundEffect.style.animation = "opacity 0.5s forwards";
 
     cloneImg.style.animation = "go-down 0.5s forwards"
     buttonExit.style.animation = "opacity 2s forwards";
