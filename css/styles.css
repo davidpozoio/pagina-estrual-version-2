@@ -13,6 +13,171 @@ a{
     -webkit-tap-highlight-color: transparent;
 }
 
+@keyframes dropdown-menu-animation {
+    0%{
+        left: 110%;
+    }
+
+    100%{
+        left: 25%;
+    }
+}
+
+@keyframes dropdown-menu-animation-reverse {
+    0%{
+        left: 25%;
+    }
+
+    100%{
+        left: 110%;    
+    }
+}
+
+.dropdown-menu{
+    position: fixed;
+    z-index: 20;
+    left: 110%;
+
+    width: 75%;
+    height: 100%;
+
+    border-radius: 20px 0 0 20px;
+    outline: 1px solid #FFB47D;
+    background-color: #1F1F1F;
+}
+
+.dropdown-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    padding: 0;
+}
+
+.li-dropdown-start,
+.li-dropdown{
+    margin: 0;
+
+    margin-top: 4px;
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: fit-content;
+
+    list-style: none;
+}
+
+
+.li-dropdown-start{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    position: relative;
+}
+
+.dropdown-start{
+    width: 100%;
+
+}
+.dropdown-exit{
+    position: absolute;
+    top: -6px;
+    left: calc(100% - 40px);
+
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #f7c6a4a8;
+    border-radius: 50%;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.dropdown-start,
+.dropdown-who-are,
+.dropdown-where-are,
+.dropdown-glasses,
+.dropdown-aluminums,
+.dropdown-accesories,
+.dropdown-contact{
+    position: relative;
+
+    display: block;
+
+    text-decoration: none;
+    text-align: center;
+
+    height: 30px;
+
+    color: white;
+    font-size: 15px;
+
+    overflow: hidden;
+}
+
+.dropdown-start{
+    border-bottom: 1px solid #FFB47D;
+}
+
+.dropdown-start,
+.dropdown-contact{
+    color: #F1AB77;
+}
+
+.dropdown-start::after,
+.dropdown-who-are::after,
+.dropdown-where-are::after,
+.dropdown-glasses::after,
+.dropdown-aluminums::after,
+.dropdown-accesories::after,
+.dropdown-contact::after{
+    position: absolute;
+    left: -100%;
+
+    content: "";
+    width: 85%;
+    height: 100%;
+
+    border-radius: 0 100px 100px 0;
+    background-color: #ffb37d3a;
+}
+
+@keyframes dropdown-button-animation {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@media (hover: hover){
+    .dropdown-start:hover::after,
+    .dropdown-who-are:hover::after,
+    .dropdown-where-are:hover::after,
+    .dropdown-glasses:hover::after,
+    .dropdown-aluminums:hover::after,
+    .dropdown-accesories:hover::after,
+    .dropdown-contact:hover::after{
+        animation: dropdown-button-animation 0.2s forwards;
+
+    }
+}
+
+.dropdown-start:active::after,
+.dropdown-who-are:active::after,
+.dropdown-where-are:active::after,
+.dropdown-glasses:active::after,
+.dropdown-aluminums:active::after,
+.dropdown-accesories:active::after,
+.dropdown-contact:active::after{
+    animation: dropdown-button-animation 0.2s forwards;
+    
+}
+
 
 .nav{
     position: fixed;
@@ -71,6 +236,12 @@ a{
     text-decoration: none;
     color: #FFB47D;
 }
+
+.menu-button{
+    background-color: transparent;
+    border: 0;
+}
+
 
 @keyframes opacity-menu {
     0%{
@@ -152,6 +323,11 @@ a{
     align-items: center;
 
     margin-top: 50px;
+}
+
+.who-are-info,
+.where-are-info{
+    padding-top: 60px;
 }
 
 .who-are-content,
@@ -283,6 +459,12 @@ a{
 .aluminums,
 .accesories{
     margin-top: 50px;
+}
+
+.glasses,
+.aluminums,
+.accesories{
+    padding-top: 60px;
 }
 
 .button-img{

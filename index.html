@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +15,28 @@
 </head>
 <body id="body">
     <header class="header">
+        <nav class="dropdown-menu">
+            <ul class="dropdown-ul">
+                <li class="li-dropdown-start">
+                    <a class = "dropdown-start" href="#body">INICIO</a>
+                    <button class="dropdown-exit">X</button>
+                </li>
+                <li class="li-dropdown"><a class = "dropdown-who-are" href="#who-are">¿QUIENES SOMOS?</a></li>
+                <li class="li-dropdown"><a class = "dropdown-where-are" href="#where-are">¿CÓMO UBICARNOS?</a></li>
+                <li class="li-dropdown"><a class = "dropdown-glasses" href="#glasses">VIDRIOS</a></li>
+                <li class="li-dropdown"><a class = "dropdown-aluminums" href="#aluminums">ALUMINIOS</a></li>
+                <li class="li-dropdown"><a class = "dropdown-accesories" href="#accesories">ACCESORIOS</a></li>
+                <li class="li-dropdown"><a class = "dropdown-contact" href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>
         <nav class="nav">
             <li class="logo">ESTRUAL</li>
             <ul class="nav-options">
                 <li class="li-start"><a href="#body" class="start-button">INICIO</a></li>
                 <li class="li-contact"><a href="#contact" class="contact-button">CONTACTO</a></li>
-                <li class="li-menu"><a href="" class="menu-button">MENU</a></li>
+                <li class="li-menu"><button href="" class="menu-button"><span class="material-symbols-outlined">
+                    menu
+                    </span></button></li>
             </ul>
         </nav>
         <div class="main-img">
@@ -29,13 +47,13 @@
         </div>
     </header>
     <main>
-        <div class="information" id="text1">
-            <div class="who-are-info">
+        <div class="information" id="information">
+            <div class="who-are-info" id="who-are">
                 <h2 class="who-are-tittle">¿QUIÉNES SOMOS?</h2>
                 <p class="who-are-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias rerum excepturi reprehenderit dolor nemo sed consequatur temporibus asperiores? Dolor nemo omnis eius sint cum? Aliquid a consectetur modi incidunt.
                 Voluptatum totam placeat labore autem maiores, doloremque explicabo quo mollitia molestiae quibusdam rem voluptatibus velit unde repudiandae necessitatibus obcaecati magni dignissimos, fuga enim eius magnam? Facere earum error qui. Mollitia.</p>
             </div>
-            <div class="where-are-info">
+            <div class="where-are-info" id="where-are">
                 <h2 class="where-are-tittle">¿CÓMO UBICARNOS?</h2>
                 <p class="where-are-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est, ullam earum nisi minus accusantium porro a ipsa. Odio recusandae nostrum maiores temporibus similique, modi numquam aliquid ex accusamus illo?
                 Saepe non similique recusandae eius repellat quidem inventore officiis quo, optio voluptate esse sunt dolor nihil molestias assumenda laborum. Ratione, accusantium voluptatum non a architecto voluptate deleniti? Facilis, impedit possimus.</p>
@@ -45,7 +63,7 @@
         </div>
         <div class="catalogue">
             <h2 class="catalogue-tittle">CATÁLOGO</h2>
-            <div class="glasses">
+            <div class="glasses" id="glasses">
                 <div class="glasses-info">
                     <h3 class="glasses-tittle">VIDRIOS</h3>
                 </div>
@@ -76,7 +94,7 @@
                     </button>
                 </div>
             </div>
-            <div class="aluminums">
+            <div class="aluminums" id="aluminums">
                 <div class="aluminums-info">
                     <h2 class="aluminums-tittle">ALUMINIO</h2>
                 </div>
@@ -108,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="accesories">
+            <div class="accesories" id="accesories">
                 <div class="accesories-info">
                     <h2 class="accesories-tittle">ACCESORIOS</h2>
                 </div>
@@ -159,4 +177,5 @@
     </footer>
 </body>
     <script src="/scripts/buttonImgClick.js"></script>
+    <script src="/scripts/dropdownMenu.js"></script>
 </html>
