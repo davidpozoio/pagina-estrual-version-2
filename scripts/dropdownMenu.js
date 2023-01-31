@@ -10,9 +10,17 @@ function dropdownButtonsAnimation(){
 
     for(let i = 0; i<dropDownButtons.length;i++){
         dropDownButtons[i].addEventListener("click",()=>{
-            document.body.removeChild(backgroundEffect);
 
-            dropDownMenu.style.animation = "dropdown-menu-animation-reverse 0.5s forwards";
+            if(window.matchMedia("(min-width: 600px)").matches){
+                dropDownMenu.style.animation = "dropdown-menu-desktop-animation-reverse 0.5s forwards";
+
+            }else{
+                document.body.removeChild(backgroundEffect);
+
+                dropDownMenu.style.animation = "dropdown-menu-animation-reverse 0.5s forwards";
+            }
+
+
         })
 
     }
@@ -36,16 +44,40 @@ let dropDownExitButton = document.querySelector(".dropdown-exit");
 
 buttonMenu.addEventListener("click",()=>{
 
-    document.body.appendChild(backgroundEffect);
-    backgroundEffect.style.animation = "opacity 0.5s forwards";
 
-    dropDownMenu.style.animation = "dropdown-menu-animation 0.5s forwards";
+
+    if(window.matchMedia("(min-width: 600px)").matches){
+
+        dropDownMenu.style.animation = "dropdown-menu-desktop-animation 0.5s forwards";
+
+
+
+
+    }else{
+
+        document.body.appendChild(backgroundEffect);
+        backgroundEffect.style.animation = "opacity 0.5s forwards";
+
+        dropDownMenu.style.animation = "dropdown-menu-animation 0.5s forwards";
+    }
+
+
 })
 
 dropDownExitButton.addEventListener("click",()=>{
-    document.body.removeChild(backgroundEffect);
 
-    dropDownMenu.style.animation = "dropdown-menu-animation-reverse 0.5s forwards";
+
+    if(window.matchMedia("(min-width: 600px)").matches){
+        
+        dropDownMenu.style.animation = "dropdown-menu-desktop-animation-reverse 0.5s forwards";
+    }else{
+
+        document.body.removeChild(backgroundEffect);
+
+        dropDownMenu.style.animation = "dropdown-menu-animation-reverse 0.5s forwards";
+    }
+
+
 })
 
 dropdownButtonsAnimation();
