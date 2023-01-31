@@ -312,7 +312,7 @@ a{
 
     background-color: #FFB47D;
     background-image: url("https://scontent.fcue1-1.fna.fbcdn.net/v/t1.6435-9/119066053_3577251142319866_6057670025988031120_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=hAJu7qmbvhwAX8aQwM-&_nc_ht=scontent.fcue1-1.fna&oh=00_AfBCvKpFUpGWNlejgEpCJswLXhzOcP4qnv0X1N8R3Gnu-Q&oe=63F53645");
-    background-position: 0 0;
+    background-position: -350px 0;
     background-repeat: no-repeat;
 }
 
@@ -324,8 +324,6 @@ a{
     height: 100%;
 
     background-color: #e48922a4;
-    background-color: #1d1d1d;
-    opacity: 0.8;
 }
 
 .main-img-text{
@@ -533,6 +531,10 @@ a{
     }
 }
 
+.img:active{
+    animation: zoom 0.2s forwards;
+}
+
 .button-tittle{
     margin: 0;
     margin-bottom: 10px;
@@ -707,6 +709,7 @@ a{
 
     .main-img{
         background-size: cover;
+        background-position: 0 0;
     }
 
     .glasses-img,
