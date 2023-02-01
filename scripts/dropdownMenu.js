@@ -5,7 +5,8 @@ function dropdownButtonsAnimation(){
         document.querySelector(".dropdown-where-are"),
         document.querySelector(".dropdown-glasses"),
         document.querySelector(".dropdown-aluminums"),
-        document.querySelector(".dropdown-accesories"),
+        document.querySelector(".dropdown-windows"),
+        document.querySelector(".dropdown-doors"),
         document.querySelector(".dropdown-contact")];
 
     for(let i = 0; i<dropDownButtons.length;i++){

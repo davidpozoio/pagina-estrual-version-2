@@ -103,7 +103,8 @@ a{
 .dropdown-where-are,
 .dropdown-glasses,
 .dropdown-aluminums,
-.dropdown-accesories,
+.dropdown-windows,
+.dropdown-doors,
 .dropdown-contact{
     position: relative;
 
@@ -134,7 +135,8 @@ a{
 .dropdown-where-are::after,
 .dropdown-glasses::after,
 .dropdown-aluminums::after,
-.dropdown-accesories::after,
+.dropdown-windows::after,
+.dropdown-doors::after,
 .dropdown-contact::after{
     position: absolute;
     left: -100%;
@@ -162,7 +164,8 @@ a{
     .dropdown-where-are:hover::after,
     .dropdown-glasses:hover::after,
     .dropdown-aluminums:hover::after,
-    .dropdown-accesories:hover::after,
+    .dropdown-windows:hover::after,
+    .dropdown-doors:hover::after,
     .dropdown-contact:hover::after{
         animation: dropdown-button-animation 0.2s forwards;
 
@@ -174,7 +177,8 @@ a{
 .dropdown-where-are:active::after,
 .dropdown-glasses:active::after,
 .dropdown-aluminums:active::after,
-.dropdown-accesories:active::after,
+.dropdown-windows:active::after,
+.dropdown-doors:active::after,
 .dropdown-contact:active::after{
     animation: dropdown-button-animation 0.2s forwards;
     
@@ -458,7 +462,8 @@ a{
 
 .glasses-tittle,
 .aluminums-tittle,
-.accesories-tittle{
+.windows-tittle,
+.doors-tittle{
     margin: 0;
     margin-bottom: 12px;
 
@@ -472,7 +477,8 @@ a{
 
 .glasses-img,
 .aluminums-img,
-.accesories-img{
+.windows-img,
+.doors-img{
     display: grid;
     grid-template-columns: 148px 148px;
     grid-template-rows: 134px 134px;
@@ -485,13 +491,15 @@ a{
 }
 
 .aluminums,
-.accesories{
+.windows,
+.doors{
     margin-top: 50px;
 }
 
 .glasses,
 .aluminums,
-.accesories{
+.windows,
+.doors{
     padding-top: 60px;
 }
 
@@ -502,7 +510,7 @@ a{
     width: 148px;
     height: 163px;
 
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     background-color: transparent;
     border: 0;
 
@@ -541,7 +549,7 @@ a{
 
     color: #FFB47D;
 
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 300;
 }
 
@@ -714,7 +722,8 @@ a{
 
     .glasses-img,
     .aluminums-img,
-    .accesories-img{
+    .windows-img,
+    .doors-img{
         grid-template-columns: 180px 180px 180px;
         grid-template-rows: 190px 190px;
 
@@ -731,7 +740,7 @@ a{
         left: 110%;
 
         width: 400px;
-        height: 450px;
+        height: 520px;
     }
 
 }
