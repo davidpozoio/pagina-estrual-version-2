@@ -75,7 +75,21 @@ function showCloneImg (cloneImg){
         cloneImg.style.width = "85%";
         cloneImg.style.height = "auto";
 
-        cloneImg.style.left = "calc(100%/2 - 42%)";
+        console.log(cloneImg.clientHeight);
+
+        if(cloneImg.clientHeight >= 500){
+
+            
+            cloneImg.style.width = "70%";
+            cloneImg.style.height = "auto";
+
+            console.log(cloneImg.clientHeight);
+            cloneImg.style.left = "calc(100%/2 - 35%)";
+        }else{
+            cloneImg.style.left = "calc(100%/2 - 42%)";
+        }
+
+        
 
     }
 

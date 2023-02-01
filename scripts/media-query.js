@@ -55,10 +55,19 @@ window.addEventListener("resize",()=>{
         console.log(mediaQuery600);
     }else{
 
-        changeWidthImg("85%");
-        changeHeigthImg("auto");
+        
+        if(cloneImg.clientHeight >= 500){
 
-        centerImgCellPhone();
+            
+            cloneImg.style.width = "70%";
+            cloneImg.style.height = "auto";
+
+            console.log(cloneImg.clientHeight);
+            cloneImg.style.left = "calc(100%/2 - 35%)";
+        }else{
+            cloneImg.style.left = "calc(100%/2 - 42%)";
+        }
+
 
         console.log(mediaQuery600);
     }
