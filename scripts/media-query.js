@@ -2,16 +2,13 @@ function changeWidthImg(mywidth){
     for(let i = 0; cloneImg[i] != null; i++){
         cloneImg[i].style.width = mywidth;
 
-
     }
-
   
 }
 
 function changeHeigthImg(myheight){
     for(let i = 0; cloneImg[i] != null; i++){
         cloneImg[i].style.height = myheight;
-
 
     }
 }

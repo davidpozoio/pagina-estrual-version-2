@@ -6,7 +6,8 @@ function dropdownButtonsAnimation(){
         document.querySelector(".dropdown-glasses"),
         document.querySelector(".dropdown-aluminums"),
         document.querySelector(".dropdown-windows"),
-        document.querySelector(".dropdown-doors"),
+        document.querySelectorAll(".dropdown-doors")[0],
+        document.querySelectorAll(".dropdown-doors")[1],
         document.querySelector(".dropdown-contact")];
 
     for(let i = 0; i<dropDownButtons.length;i++){
@@ -50,9 +51,6 @@ buttonMenu.addEventListener("click",()=>{
     if(window.matchMedia("(min-width: 600px)").matches){
 
         dropDownMenu.style.animation = "dropdown-menu-desktop-animation 0.5s forwards";
-
-
-
 
     }else{
 

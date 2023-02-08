@@ -60,7 +60,7 @@ a{
     margin: 0;
 
     margin-top: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     width: 100%;
     height: fit-content;
@@ -183,6 +183,7 @@ a{
     animation: dropdown-button-animation 0.2s forwards;
     
 }
+
 
 
 .nav{
@@ -463,7 +464,8 @@ a{
 .glasses-tittle,
 .aluminums-tittle,
 .windows-tittle,
-.doors-tittle{
+.doors-tittle,
+.others-tittle{
     margin: 0;
     margin-bottom: 12px;
 
@@ -478,7 +480,8 @@ a{
 .glasses-img,
 .aluminums-img,
 .windows-img,
-.doors-img{
+.doors-img,
+.others-img{
     display: grid;
     grid-template-columns: 148px 148px;
     grid-template-rows: 134px 134px;
@@ -492,16 +495,23 @@ a{
 
 .aluminums,
 .windows,
-.doors{
+.doors,
+.others{
     margin-top: 50px;
 }
 
 .glasses,
 .aluminums,
 .windows,
-.doors{
+.doors,
+.others{
     padding-top: 60px;
 }
+
+.others-img img{
+    width: 400px;
+}
+
 
 .button-img{
     margin: 0;
@@ -723,7 +733,8 @@ a{
     .glasses-img,
     .aluminums-img,
     .windows-img,
-    .doors-img{
+    .doors-img,
+    .others-img{
         grid-template-columns: 180px 180px 180px;
         grid-template-rows: 190px 190px;
 
@@ -748,7 +759,7 @@ a{
         left: 110%;
 
         width: 400px;
-        height: 520px;
+        height: fit-content;
     }
 
 }
