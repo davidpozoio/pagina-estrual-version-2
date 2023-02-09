@@ -8,6 +8,7 @@ function dropdownButtonsAnimation(){
         document.querySelector(".dropdown-windows"),
         document.querySelectorAll(".dropdown-doors")[0],
         document.querySelectorAll(".dropdown-doors")[1],
+        document.querySelectorAll(".dropdown-doors")[2],
         document.querySelector(".dropdown-contact")];
 
     for(let i = 0; i<dropDownButtons.length;i++){
