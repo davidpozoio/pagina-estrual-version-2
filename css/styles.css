@@ -736,7 +736,7 @@ a{
     .doors-img,
     .others-img{
         grid-template-columns: 180px 180px 180px;
-        grid-template-rows: 190px 190px;
+        grid-template-rows: 190px;
 
     }
 
@@ -762,4 +762,101 @@ a{
         height: fit-content;
     }
 
+}
+
+@media (min-width: 1000px) {
+        @keyframes dropdown-menu-desktop-animation {
+        0%{
+            left: 110%;
+        }
+
+        100%{
+            left: calc(100% - 400px);
+        }
+    }
+
+    @keyframes dropdown-menu-desktop-animation-reverse {
+        0%{
+            left: calc(100% - 400px);
+        }
+        100%{
+            left: 110%;
+        }
+    }
+
+    .main-img{
+        background-size: cover;
+        background-position: 0 0;
+    }
+
+    .glasses-img,
+    .aluminums-img,
+    .windows-img,
+    .doors-img,
+    .others-img{
+        grid-template-columns: 280px 280px 280px;
+        grid-template-rows: 290px;
+        gap: 40px;
+
+    }
+
+    .button-img,
+    .box-img{
+        width: 280px;
+        height: 280px;
+
+    }
+
+    .main-img-svg{
+        position: relative;
+        top: 30px;
+    
+        opacity: 1;
+        width: 350px;
+    }
+
+    .dropdown-menu{
+        left: 110%;
+
+        width: 400px;
+        height: fit-content;
+    }
+
+
+    .information{
+        display: flex;
+        flex-direction: row;
+
+        align-items:baseline;
+        justify-content: center;
+    }
+
+    .where-are-tittle, 
+    .who-are-tittle{
+        font-size: 20px;
+    }
+
+    .where-are-content,
+    .who-are-content{
+        font-size: 15px;
+    }
+
+    .catalogue-tittle{
+        font-size: 20px;
+    }
+    .glasses-tittle,
+    .doors-tittle,
+    .aluminums-tittle,
+    .others-tittle,
+    .windows-tittle{
+        font-size: 20px;
+    }
+
+    .button-tittle{
+        font-size: 12px;
+    }
+
+    .others-img img{
+        width: 650px;
+    }
 }
