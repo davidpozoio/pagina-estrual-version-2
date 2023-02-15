@@ -789,6 +789,10 @@ a{
         background-position: 0 0;
     }
 
+    .main-img-svg{
+        left: -20px;
+    }
+
     .glasses-img,
     .aluminums-img,
     .windows-img,
